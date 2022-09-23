@@ -25,3 +25,41 @@ input {
   width: 400px;
   margin-bottom: 16px;
 }
+
+/* solution */
+
+a {
+  color: #666;
+  text-decoration: none;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 16px
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.header, .footer{
+  display: flex;
+  padding: 16px;
+  justify-content: space-between;
+}
+
+.footer{
+  background-color: #eee;
+}
