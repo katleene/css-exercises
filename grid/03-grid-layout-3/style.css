@@ -89,3 +89,77 @@
   font-size: 13px;
   font-weight: normal;  
 }
+
+
+/* solution */
+
+ul{
+  list-style: none;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 2fr 1fr . 1fr;
+  gap 4px;
+}
+
+.header{
+  grid-column: span 2;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  align-items: center;
+}
+
+.sidebar{
+  grid-column: 1;
+  grid-row: span 2;
+
+  display: grid;
+  gap: 50px;
+
+}
+
+.sidebar div{
+  display: grid;
+  justify-items: center;
+  align-items: center;;
+}
+
+.nav{
+  grid-column: 2 / -1;
+}
+
+.footer{
+  grid-column: span 2;
+}
+
+.logo {
+  grid-column: 1;
+}
+
+.menu{
+  grid-column: 2;
+}
+
+.menu > ul {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+}
+
+.nav>ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+}
+
+
+.article{
+  display: grid;
+  gap:15px;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+}
+
+.card{
+  height:200px;
+}
